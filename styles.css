@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap');
+
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--Eggshell);
+  font-family: outfit, sans-serif;
+  color: var(--Wenge-Brown);
+}
+
+.wrapper {
+    padding: 1rem 2rem;
+    border-radius: 1.2rem;
+    background-color: white;
+    line-height: 1.1;
+    max-width: 36.5rem; 
+   display: grid;
+}
+
+img {
+  max-width: 100%;
+  margin-top: 12rem;
+  border-radius: .5rem;
+}
+
+.omelette-infos {
+  display: grid;
+  gap: 1rem;
+}
+
+.preparation {
+  display: grid;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.box-prep {
+  background-color: var(--Eggshell);
+  padding-left: 1rem;
+  padding-bottom: 10px;
+  border-radius: .5rem;
+}
+
+ul  {
+  padding-left: 2rem;
+  padding-top: .9rem;
+}
+
+ul li {
+  padding-bottom: .5rem;
+}
+
+p {
+  font-size: 16px;
+  color: var(--Wenge-Brown);
+}
+
+h2, h4 {
+  font-family: "young serif", serif;
+  font-weight: 550;
+  margin-top: 1rem;
+  color: var(--Dark-Raspberry);
+}
+
+.ingredients {
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+}
+
+hr {
+ background-color: var(--Light-Grey);
+}
+
+.instructions {
+  display: grid;
+  gap: 10px;
+  padding-bottom: 1rem;
+}
+
+ol {
+  padding-left: 1.4rem;
+  display: grid;
+  gap: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.nutritions {
+  display: grid;
+  gap: 10px;
+}
+
+.nutritions table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+
+}
+
+.nutritions td {
+  padding: 0.75rem 2rem;
+  border-bottom: 1px solid var(--Light-Grey);
+}
+
+@media (max-width: 375px) {
+  img {
+
+margin-top: 21rem;
+  }
+}
